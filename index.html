@@ -1759,36 +1759,39 @@
         <h3 class="form-title">Compila il modulo</h3>
         <p class="form-subtitle">Ti rispondo entro 48 ore con tutte le informazioni.</p>
 
-        <form onsubmit="handleSubmit(event)">
+        <form action="https://formspree.io/f/annafornarosmm" method="POST">
+          <input type="hidden" name="_replyto" value="annafornarosmm@gmail.com">
+          <input type="hidden" name="_subject" value="Nuovo contatto dal sito — Anna Fornaro">
+          <input type="hidden" name="_language" value="it">
           <div class="form-row">
             <div class="form-group">
               <label>Nome *</label>
-              <input type="text" placeholder="Il tuo nome" required>
+              <input type="text" name="nome" placeholder="Il tuo nome" required>
             </div>
             <div class="form-group">
               <label>Cognome *</label>
-              <input type="text" placeholder="Il tuo cognome" required>
+              <input type="text" name="cognome" placeholder="Il tuo cognome" required>
             </div>
           </div>
 
           <div class="form-group">
             <label>Email *</label>
-            <input type="email" placeholder="la@tuaemail.com" required>
+            <input type="email" name="email" placeholder="la@tuaemail.com" required>
           </div>
 
           <div class="form-group">
             <label>Che tipo di attività hai? *</label>
-            <input type="text" placeholder="Es. studio medico, startup B2B, centro estetico..." required>
+            <input type="text" name="attivita" placeholder="Es. studio medico, startup B2B, centro estetico..." required>
           </div>
 
           <div class="form-group">
             <label>Qual è la sfida principale nella tua comunicazione online? *</label>
-            <textarea placeholder="Descrivimi la situazione attuale — più sei specifico, meglio posso aiutarti." required></textarea>
+            <textarea name="sfida" placeholder="Descrivimi la situazione attuale — più sei specifico, meglio posso aiutarti." required></textarea>
           </div>
 
           <div class="form-group">
             <label>Hai già lavorato con un professionista del marketing? *</label>
-            <select required>
+            <select name="esperienza_precedente" required>
               <option value="">Seleziona una risposta</option>
               <option>Sì, ma non ho visto risultati concreti</option>
               <option>Sì, con buoni risultati — voglio evolvere</option>
@@ -1798,7 +1801,7 @@
 
           <div class="form-group">
             <label>Come mai stai cercando supporto proprio adesso? *</label>
-            <textarea placeholder="Cosa è successo che ti ha spinto a cercare aiuto in questo momento?" required></textarea>
+            <textarea name="motivazione" placeholder="Cosa è successo che ti ha spinto a cercare aiuto in questo momento?" required></textarea>
           </div>
 
           <button type="submit" class="form-submit">Invia il modulo →</button>
